@@ -1,0 +1,14 @@
+
+This demonstrates the problem with typescript and compiling symbolic links.
+
+npm run all will install everything, create a symbolic link from web/src/common
+to common/src/ and compile the typescript into web/bin and desktop/bin.
+
+The web directory contains a symbolic link between web/src/common and common/src/.
+Compiling the symbolic link causes web/bin to contains 2 directories common and web.
+
+The desktop has a copy of Common.ts in desktop/src/common (i.e. no symbolic link).
+This results in desktop/bin Containing Desktop.js and common/Common.js.
+
+How do you get the symbolic link version to generate the same structure as the
+non symbolic version?

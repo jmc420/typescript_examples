@@ -1,0 +1,21 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/node": "^6.0.46"
+  },
+  "devDependencies": {
+    "node-inspector": "^0.12.8",
+    "typescript": "2.0.6"
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "scripts": {
+    "all": "npm install && npm run compile",
+    "clean": "rm -fr ./node_modules ./bin/*",
+    "debug": "./node_modules/.bin/node-debug  bin/Web.js",
+    "compile": "tsc",
+    "start": "node bin/Web.js"
+  }
+}

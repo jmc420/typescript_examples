@@ -1,0 +1,17 @@
+{
+  "name": "symlink-problem",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "scripts": {
+    "all": "npm install && cd web && npm run all && cd ../desktop && npm run all",
+    "preinstall": "cd web/src && rm -f common && ln -s ../../common/src common"
+  }
+}
