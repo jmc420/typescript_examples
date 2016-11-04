@@ -12,6 +12,9 @@
   },
   "scripts": {
     "all": "npm install && cd web && npm run all && cd ../desktop && npm run all",
-    "preinstall": "cd web/src && rm -f common && ln -s ../../common/src common"
+    "clean": "npm install && cd web && npm run clean && cd ../desktop && npm run clean",
+    "link_desktop": "cd desktop/src && rm -f common && ln -s ../../common/src common",
+    "link_web": "cd web/src && rm -f common && ln -s ../../common/src common",
+    "preinstall": "npm run link_desktop && npm run link_web"
   }
 }
