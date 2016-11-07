@@ -2,7 +2,9 @@
   "name": "web",
   "version": "1.0.0",
   "dependencies": {
-    "@types/node": "^6.0.46"
+    "@types/loglevel": "^1.4.29",
+    "@types/node": "^6.0.46",
+    "loglevel": "1.4.1"
   },
   "devDependencies": {
     "node-inspector": "^0.12.8",

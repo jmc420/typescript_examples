@@ -1,9 +1,11 @@
-
+import * as log from 'loglevel';
 import Common from './common/Common';
 
 export class Web {
   constructor() {
-    console.log("Web");
+    log.setLevel(LogLevel.INFO);
+    console.log("Web "+log.getLevel());
+    log.info("Web logging");
   }
 
 }
