@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "node-inspector": "^0.12.8",
-    "typescript": "2.0.6"
+    "typescript": "2.1.4"
   },
   "engines": {
     "node": ">=5.0.0"

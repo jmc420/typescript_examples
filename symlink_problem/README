@@ -8,5 +8,8 @@ and desktop/src/common to common/src/ and compile the typescript.
 The moduleResolution of "node" in the web directory's tsconfig.json causes the
 typescript compiler to generate 2 directories common and web.
 
-he moduleResolution of "classic" in the desktop directory's tsconfig.json causes the
+The moduleResolution of "classic" in the desktop directory's tsconfig.json causes the
 typescript compiler to generate Desktop.js and common/Common.js.
+
+Typescript 2.1.4 fixes the problem.
+

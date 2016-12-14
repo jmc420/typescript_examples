@@ -5,7 +5,7 @@
     "experimentalDecorators": true,
     "jsx":"react",
     "module": "commonjs",
-    "moduleResolution": "classic",
+    "moduleResolution": "node",
     "noImplicitAny": false,
     "noLib": false,
     "outDir": "./bin",
