@@ -14,7 +14,7 @@
   },
   "scripts": {
     "all": "npm run compile",
-    "clean": "rm -f node_modules && rm -f lib/*",
+    "clean": "rm -fR node_modules && rm -f lib/*",
     "compile": "./node_modules/.bin/tsc",
     "webpack": "webpack --mode='development' --config webpack.config.js"
   }
