@@ -1,0 +1,24 @@
+{
+  "name": "examplelibraryconsumer",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "examplelibrary": "file:../example_library"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.6",
+    "webpack": "4.41.5",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "scripts": {
+    "all": "npm run compile",
+    "clean": "rm -f node_modules && rm -f lib/*",
+    "exec": "npm run compile && node ./lib/index.js",
+    "compile": "./node_modules/.bin/tsc",
+    "webpack": "webpack --mode='development' --config webpack.config.js"
+  }
+}
