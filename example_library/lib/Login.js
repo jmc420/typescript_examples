@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Login = void 0;
 var Login = (function () {
     function Login(email, password) {
         this.email = email;
@@ -13,4 +14,4 @@ var Login = (function () {
     };
     return Login;
 }());
-exports.default = Login;
+exports.Login = Login;

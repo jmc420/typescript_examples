@@ -1,6 +1,6 @@
-import ILogin from './Login';
+import {ILogin} from './ILogin';
 
-export default class Login implements ILogin {
+export class Login implements ILogin {
     private email: string;
     private password: string;
 

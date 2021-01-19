@@ -1,2 +1,2 @@
-export * from './ILogin';
-export * from './Login';
+export {ILogin} from './ILogin';
+export {Login} from './Login';

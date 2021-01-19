@@ -1,5 +1,5 @@
 
-export default interface ILogin {
+export interface ILogin {
     getEmail(): string;
     getPassword(): string;
 }
